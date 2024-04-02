@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Yoshiegg</title>
+</head>
+<body style="background-image: url('media/yellow.png')";>
+    <script src="main.js"></script>
+    <div id="main">
+        <div id="top">
+            <text>
+                Happy Easter Monday 2024! Open the yoshiegg for a prize!
+            </text>
+        </div>       
+        
+        <input id="egg" type="image" src="media/yoshiegg.png" 
+            onclick="eggClick()"/>
+        <div id="chanceCounter">
+            <p id="cclabel">Chance to open the egg: 0%</p>
+        </div>
+
+        <input id="cheategg" hidden="true" style="top: 0%; left: 0%;" type="image" src="media/THANOSEGG.png" 
+        onclick="openCheat()"/>
+
+        <div id="cheatmenu" hidden="true">
+            <header>Cheat</header>
+            <button onclick="cheatClick(2)">x2%</button>
+            <button onclick="cheatClick(0.5)">x0.5%</button>
+        </div>
+    </div>
+
+    <div id="videohider" hidden="true">
+        <video id="content" width="100%" height="100%">
+            <source src="media/yoshiegg-video-compress.mp4">
+            How anticlimactic... nothing happened.
+        </video>    
+    </div>
+    
+</body>
+</html>
